@@ -1,0 +1,30 @@
+@charset "utf-8";
+/**
+/*样式初始化*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td{ margin:0 ; padding:0;}
+body{font-family: "microsoft yahei";font-size: 14px;}
+ul, ol {list-style:none;}
+li{list-style-type:none;}
+table {border-collapse:collapse; border:none}
+p{padding: 0;margin: 0px 0 0px;}
+*{padding: 0;margin: 0;}
+i{font-style: normal;}
+b{font-weight: normal;}
+button{outline: none;border:none;}
+/**清除浮动**/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+.clear{clear:both;height:0;font:0/0 Arial;visibility:hidden;}
+/**通用属性**/
+.fw-b{font-weight: bold;}
+a{color:#333;text-decoration:none;outline:none;cursor: pointer;}
+a:hover{color:#333;text-decoration:none;}
+.fl{ float:left;}
+.fr{ float:right;}
+.hide{display: none}
+.show{display:block;}
+/*对齐*/
+.txt-c{text-align: center;}
+.txt-r{text-align: right;}
