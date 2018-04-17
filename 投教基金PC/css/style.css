@@ -1,8 +1,8 @@
 .warpper{width: 100%;}
 /* banner */
-	.banner{width: 100%;height: 600px;background-image: url(../images/banner-img2.png); background-position: center top;background-repeat: no-repeat;}
+	.banner{width: 100%;height: 600px;background-image: url(../images/banner-img.png); background-position: center top;background-repeat: no-repeat;}
 	.banner .ban-div{width: 1180px;height: 600px;margin: 0 auto;position: relative;}
-	.banner .ban-div .logo{width: 85px;height: 31px;position: absolute;left: 4px;top: 13px;}
+	.banner .ban-div .logo{width: 149px;height: 29px;position: absolute;left: 4px;top: 13px;}
 	.banner .ban-div .phonenum{font-size: 14px; color: #666; position: absolute;right: 0px;top: 20px;}
 	.banner .ban-div .ban-local{width: 488px;height: 106px;position: absolute;top: 378px;left: 0px;}
 	.banner .ban-div .ban-local a{display: block; width: 100%;height: 100%; color: #fff;text-align: center;font-size: 30px;line-height: 100px;}
@@ -11,6 +11,11 @@
 /* 主体 */
 .main{width: 100%;background-image: url(../images/bg.png);background-position:center top;position: relative;}
 .phb{position: absolute;top: -1px  ;right: 150px;cursor:pointer}
+.yichu{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
 /* 活动流程 */
 .process{width: 1180px;height: 438px;margin: 0 auto;border-top: 1px solid #fff;}
 .process .content{width: 1180px;height: 200px;}
@@ -58,7 +63,9 @@
 .teach .teacher .teach-job{font-size: 34px;font-family: "方正正中黑简体";}
 .teach .teacher .teach-txt{font-size: 18px;color: #666;line-height: 30px;padding-top: 10px;}
 .teach-btn{width: 428px;height: 106px;background-image: url(../images/btn-bg.png);background-size: 100% 100%;position: absolute;bottom: -18px;left: 50%;margin-left: -214px;color: #fff;font-size: 28px;text-align: center;line-height: 100px;cursor:pointer}
-/* 活动规则 */
+.teach-btn:hover{
+	color: #fff;
+}/* 活动规则 */
 .rule{width: 1180px;height: 823px;margin: 0 auto;border-top: 1px solid #fff;clear: both;}
 .rule-pic{position: relative;width: 1180px;height: 100px;}
 .rule-picL{width: 415px;height: 100px;position: absolute;left: 0px;}
@@ -79,14 +86,15 @@
 .black{width: 100%;height: 100%;position: fixed;top: 0;left: 0;bottom: 0;right: 0; background-color: rgba(0,0,0,0.6);z-index: 12;}
 /*loading图*/
 .black .loading{
-	display: block;
 	width: 200px;
 	height: 200px;
-	margin: 0 auto;
-	margin-top:25%;
+	display: block;
+	position: absolute;
+	top: calc(50% - 100px) ;
+	left: calc(50% - 100px);
 }
 /* 预约*/
-.yuyue{}
+.yuyue{text-decoration: none;}
 /* 成功 */
 .b-success{width: 479px;height: 658px;position: absolute;top: 50%;left: 50%;margin-left: -239.5px;margin-top: -358px;}
 .b-success .clearfix .close{display: block;float: right;width: 40px;height: 40px;background: url(../images/close.png) no-repeat;cursor: pointer;opacity: 1;}

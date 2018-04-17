@@ -9,8 +9,8 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<title>投教基金</title>
-		<link rel="stylesheet" href="./css/public.css">
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="http://test.caidao.hexun.com/specials/hxtoujiao/css/public.css">
+		<link rel="stylesheet" href="http://test.caidao.hexun.com/specials/hxtoujiao/css/style.css">
 		<script src="http://imgzq.hexun.com/commonjs/jquery.js"></script>
 		<script src="http://imgzq.hexun.com/commonjs/checkphone.js"></script>
 	</head>
@@ -25,10 +25,10 @@
 			<!-- banner s-->
 			<div class="banner">
 				<div class="ban-div">
-					<div class="logo"><img src="./images/logo.png" alt=""></div>
+					<div class="logo"><img src="http://test.caidao.hexun.com/specials/hxtoujiao/images/logo2.png" alt=""></div>
 					<div class="phonenum">活动咨询热线：010-85697400/85696800</div>
 					<div class="ban-local">
-						<a href="#" class="redbtn">5月18日 10:00 免费开抢</a>
+						<a  class="redbtn" style="text-decoration: none;">5月18日 10:00 免费开抢</a>
 					</div>
 				</div>
 			</div>
@@ -132,21 +132,21 @@
 					</div>
 					<div class="rule-pic">
 						<div class="rule-picL">
-							<img src="./images/pic1.png" alt="">
+							<img src="http://test.caidao.hexun.com/specials/hxtoujiao/images/pic1.png" alt="">
 							<div>
 								<p class="ft20 c-333">参加资格</p>
 								<span class="ft16 c-666">未购买过财道平台产品的新用户</span>
 							</div>
 						</div>
 						<div class="rule-picC">
-							<img src="./images/pic2.png" alt="">
+							<img src="http://test.caidao.hexun.com/specials/hxtoujiao/images/pic2.png" alt="">
 							<div>
 								<p class="ft20 c-333">参加人数</p>
 								<span class="ft16 c-666">限1000人参与抢2000元实盘资金，操盘收益全归您</span>
 							</div>
 						</div>
 						<div class="rule-picR">
-							<img src="./images/pic3.png" alt="">
+							<img src="http://test.caidao.hexun.com/specials/hxtoujiao/images/pic3.png" alt="">
 							<div>
 								<p class="ft20 c-333">礼包使用</p>
 								<span class="ft16 c-666">课程+文字直播可在APP、WEB端使用，量化精选和实盘操作基金需下载财道APP使用</span>
@@ -167,7 +167,7 @@
 					</div>
 				</div>
 				<!-- 活动规则 e-->
-				<div class="phb"><img src="./images/phb.png" id="phb"></div>
+				<div class="phb hide"><img src="http://test.caidao.hexun.com/specials/hxtoujiao/images/phb.png" id="phb"></div>
 			</div>
 			<!-- 主体 e-->
 		</div>
@@ -180,7 +180,7 @@
 				</div>
 				<div class="suc-bg">
 					<p class="suc-txt txt-c ft20 c-333">获得2000元实盘操作资金</p>
-					<p class="code-img"><img src="./images/code-img.png" alt=""></p>
+					<p class="code-img"><img src="http://test.caidao.hexun.com/specials/hxtoujiao/images/code-img.png" alt=""></p>
 					<!--<button>打开APP，查看账户</button>-->
 				</div>
 			</div>
@@ -195,7 +195,7 @@
 				<div class="fail-bg">
 					<p class="fail-txt txt-c ft20 c-333">实盘资金已经被抢光啦~</p>
 					<p class="fail-txt2 txt-c ft20 c-999">别灰心，请关注其他活动</p>
-					<button>知道啦</button>
+					<button class="gb">知道啦</button>
 				</div>
 			</div>
 		</div>
@@ -209,7 +209,7 @@
 				<div class="wxts-bg">
 					<p class="wxts-txt txt-c ft20 c-333">本活动仅限新用户参与，</p>
 					<p class="wxts-txt2 txt-c ft20 c-333">请关注其他活动。</p>
-					<button>预约下一期</button>
+					<button class="gb">知道啦</button>
 				</div>
 			</div>
 		</div>
@@ -223,12 +223,12 @@
 				<div class="list-bg">
 					<div class="scrollhide">
 						<p class="list-head">
-										<span class="pm">排名</span>
-										<span class="zsy">总收益</span>
-										<span class="gp">股票</span>
+							<span class="pm">排名</span>
+							<span class="zsy">总收益</span>
+							<span class="gp">股票</span>
 						</p>
 						<ul class="clearfix">
-							
+
 						</ul>
 					</div>
 				</div>
@@ -236,235 +236,12 @@
 		</div>
 		<!-- 排行榜 e-->
 		<!--loading-->
-				<div class="black hide">
-					<img class="loading" src="images/loading.gif"/>
-				</div>
+		<div class="black hide">
+			<img class="loading" src="http://test.caidao.hexun.com/specials/hxtoujiao/images/loading.gif" />
+		</div>
 		<!--loading-->
-				
+
 		<!-- 弹框 e-->
 	</body>
-
-	<script>
-		$(function() {
-//			$(".black").hide()//所有弹窗隐藏
-			var _host = window.location.host;//路径配置
-			var _isTest = _host.match('test') || $.trim(_host) == '' || _host.match('127.0'),
-				_host = {
-					$domain$: "http://" + (_isTest ? "test." : "") + "investfunds.hexun.com/",
-					$attention$: "http://" + (_isTest ? "test" : "") + "follow.zq.hexun.com/",
-					$xlj$: "http://" + (_isTest ? "test." : "") + "caidao.hexun.com/"
-				};
-				
-			var _isLogin = false;
-			var checkPhone = new RealInformation();//登录|电话验证
-			//获取活动信息
-			
-			$.ajax({
-				type: "get",
-				url: _host.$domain$ + "api/activity/getActivityInfo",
-				dataType: "jsonp",
-				data: {
-					activityId: 1
-				},
-				success: function(res) {
-					console.log(res)
-					var oDate = new Date();
-					var iM = oDate.getTime(); 
-					
-					if((1523786400000-iM)<=10800000){
-						//			倒计时
-				         var starttime = new Date(1523786400000);
-//				         console.log(starttime)
-						  var djs=setInterval(function () {
-						    var nowtime = new Date();
-						    var time = starttime - nowtime;
-				//		    var day = parseInt(time / 1000 / 60 / 60 / 24);
-						    var hour = parseInt(time / 1000 / 60 / 60 % 24);
-						    var minute = parseInt(time / 1000 / 60 % 60);
-						    var seconds = parseInt(time / 1000 % 60);
-						    $('.redbtn').html(hour + "小时" + minute + "分钟" + seconds + "秒");
-						    if(hour<=0&&minute<=0&&seconds<=0){
-						    	$(".redbtn").addClass("yuyue");
-								clearInterval(djs)
-								userState(0)
-						    }
-						  }, 1000);
-					}
-					
-				}
-				
-			})
-			
-//			userState(0)
-//			$(".loading").parents(".black").show()
-			
-			function userState(state){
-				$.ajax({ //判断用户状态
-						type: "get",
-						url: _host.$domain$ + "api/activity/checkUserStatus",
-						dataType: "jsonp",
-						data: {
-							activityId: 1
-						},
-						success: function(res) {
-							console.log(res)
-							if(res.errCode == 10000) { //可以预约
-								if(state==1){
-									setTimeout(function(){userState(1)},2000)
-									$(".loading").parents(".black").show()
-								}
-							} else if(res.errCode == 20001) { //未登录
-								_isLogin = false
-							} else if(res.errCode == 20002) { //已登录但未绑定手机号
-								_isLogin = true
-							} else if(res.errCode == 20004) { //没有资格预约
-		
-							} else if(res.errCode == 20005) {//已经预约成功
-								if(state==1){
-									$(".loading").parents(".black").hide()
-									$(".b-success").parents(".black").show()
-								}
-							}
-							checkPhone.init({
-								isLogin: _isLogin,info:"为了确保奖品发放,<br>我们需要验证您的手机号."
-							}).then(function() {
-		
-							})
-							if(state==0){
-								reserve();
-							}
-							
-						}
-					});//判断用户状态end
-			}
-			
-			function reserve() { //预约
-				$(".yuyue").click(function() {
-					$.ajax({
-						type: "post",
-						url: _host.$domain$ + "api/activity/reserve",
-						dataType: "jsonp",
-						data: {
-							activityId: 1
-						},
-						success: function(res) {
-							console.log(res)
-							if(res.errCode == 10000) {
-								setTimeout(function(){userState(1)},30000)
-								$(".loading").parents(".black").show()
-							} else if(res.errCode == 20001) { //没登录
-								_isLogin = false
-							} else if(res.errCode == 20004) { //没绑定电话
-								_isLogin = true
-							} else if(res.errCode == 20002) { //没资格
-								$(".wxts").parents(".black").show()
-							} else if(res.errCode == 20009) { //人数已满
-								$(".fail").parents(".black").show()
-								$(".fail-txt").text("实盘资金已经被抢光啦~")
-							} else if(res.errCode == 20007) { //活动未开始
-								$(".fail").parents(".black").show()
-								$(".fail-txt").text("活动未开始")
-							} else if(res.errCode == 20008) { //活动已结束
-								$(".fail").parents(".black").show()
-								$(".fail-txt").text("活动已结束")
-							}
-							checkPhone.init({
-								isLogin: _isLogin,info:"为了确保奖品发放,<br>我们需要验证您的手机号."
-							}).then(function(){
-							
-							})
-						}
-					});
-				})
-			}//预约end
-
-				$(".teach-btn").click(function() {//关注
-					$.ajax({
-						type: "get",
-						url: _host.$attention$ + "relation/add.do",
-						async: true,
-						data: {
-							uid: "1037523",
-							source:2
-						},
-						dataType: "jsonp",
-						success: function(res) {
-							console.log(res)
-							if(res.statecode==10000){
-								checkPhone.init({isLogin: false}).then(function(){})
-							}else{
-								window.open(_host.$xlj$+"1037523")
-							}
-						}
-					});
-				})//关注end
-
-			
-			$(".fail").on("click", function() {//知道了关闭按钮
-				$(this).parents(".black").hide();
-			})
-
-
-			$(".close").on("click", function() {//弹窗关闭按钮
-				$(this).parents(".black").hide();
-			})
-
-			$("#phb").on("click", function() { //排行榜
-				$(".b-list").parents(".black").show()
-				$.ajax({ //排名信息
-					type: "get",
-					url: _host.$domain$ + "api/activity/getRankingUser",
-					dataType: "jsonp",
-					data: {
-						activityId: 1
-					},
-					success: function(res) {
-						console.log(res.data.results)
-						var arr = res.data.results
-						var str = "";
-						var _class="c-red";
-						for(var i = 0; i < arr.length; i++) {
-							if(arr[i].yields<0){//正负数0颜色
-								_class="c-green"
-							}else if(arr[i].yields==0){
-								_class="c-000"
-							}else{
-								_class="c-red"
-							}
-							str += `<li class="lis">
-									<div class="fl list-num"><i>${i+1}</i></div>
-									<div class="fl list-tx"><img src=${arr[i].avatar} alt=""></div>
-									<div class="fl list-name">
-										<p>${arr[i].nickName}</p>
-									</div>
-									<div class="fl list-tum">
-										<p class= ${_class} >${arr[i].yields}%</p>
-									</div>
-									<div class="fl list-share">
-										<p>${arr[i].stockName}\n${arr[i].stockCode}</p>
-										
-									</div>
-									</li>`
-						}
-						
-						$(".list-bg .clearfix").html(str)
-						
-						if($(".fl list-tum p").text()<0){
-							$(".fl list-tum p").removeClass().addClass("c-green")
-						}
-						//前三名
-						$(".list-bg .clearfix li:eq(0) .list-num i").html("").addClass("first")
-						$(".list-bg .clearfix li:eq(1) .list-num i").html("").addClass("second")
-						$(".list-bg .clearfix li:eq(2) .list-num i").html("").addClass("third")
-					}
-
-				})
-
-			})//排行榜end
-			
-
-		})
-
-	</script>
-
 </html>
+<script type="text/javascript" src="http://test.caidao.hexun.com/specials/hxtoujiao/js/toujiao.js"></script>
